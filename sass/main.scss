@@ -1,0 +1,194 @@
+
+@import "./base/font";
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+h3{
+    font-family: 'Shrikhand', cursive;
+}
+
+/* HEADER */ 
+
+.logo{
+    height: 50px;
+    width: 50%;
+    margin-left: 25%
+}
+
+/* MAIN */ 
+
+$back-color:rgb(230, 230, 230);
+
+.localised{
+    background-color: darken($back-color, 10%);
+    width: 100%;
+    height: 45px;
+    border-top: solid darken($back-color, 20%);
+    .fas{
+        font-size: 20px;
+    }
+    input{
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        height: 40px;
+        width: 150px;
+        background-color: darken($back-color, 10%);    
+       
+        &::placeholder{
+            color: black;
+        }
+    }
+}
+
+.topic-reserv{
+    background-color: $back-color;
+    text-align: center;
+    height: 300px;
+    h2{
+        margin-left: 75px;
+        text-align: center;
+        width: 250px;
+    }
+    p{
+        font-size: 1.2em;
+        width: 350px;
+        margin: 20px;
+        color: rgb(39, 39, 39);
+    }
+    .btn{
+        color: white;
+        height: 30px;
+        border-radius: 20px;
+        margin-left: 112px;
+        width: 200px;
+        background-color: blueviolet;
+        padding-top: 10px;
+    }
+}
+
+.topic-operation{
+    margin-top: 50px;
+    height: 360px;
+    .operation-results{
+        background-color: $back-color;
+        border-radius: 20px;
+        height: 75px;
+        margin-bottom: 20px;
+        box-shadow: 3px 3px 15px rgb(173, 173, 173);
+        width: 90%;
+        margin-left: 5%;
+        
+        &:active{
+            background-color: #f8ecfc;
+            i{
+                color: #9356DC;
+            }
+        }
+        .number{
+            color: white;
+            background-color: #9356DC;
+            height: 25px;
+            width: 25px;
+            position: relative;
+            top: 25px;
+            left: -10px;
+            border-radius: 13px;
+            text-align: center;
+        }
+        i{
+            color: grey;
+            position: relative;
+            left: 35px;
+            top: 3px;
+        }
+        p{
+            margin-left: 80px;
+            font-weight: bold;
+            position: relative;
+            top: -32px;
+        }
+    }
+}
+
+.topic-restaurant{
+    margin: auto;
+    background-color: $back-color;
+    height: 1250px;
+    padding-left: 20px;
+    padding-right: 20px;
+    h2{
+        padding-top: 50px;
+    }
+    .restaurant-result{
+        height: 175px;
+        width: 100%;
+        background-color: white;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        margin-bottom: 100px;
+        .restaurant-newest{
+            width: 30%;
+            background-color: #90e2c9;
+            float: right;
+            height: 30px;
+            color: darken(#90e2c9, 40%);
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+            margin-right: 10px;
+            padding-top: 5px;
+            border-radius: 2px;
+            position: relative;
+            bottom: 75px;
+        }
+        .restaurant-over{
+            background-color: white;
+            height: 70px;
+            width: 349px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            position: relative;
+            top: 175px;
+            box-shadow: 3px 3px 15px rgb(173, 173, 173);
+            display: inline-block;
+            padding-left: 20px;
+            h2{
+                font-size: 1.25em;
+                margin-top: -40px;
+            }
+            p{
+                margin-top: -10px;
+            }
+            i{
+                font-size: 1.75em;
+                float: right;
+                position: relative;
+                bottom: 55px;
+                right: 30px;
+                &:active{
+                    color: #9356DC;
+                }
+            }
+        }
+    }
+    .img-first{
+        background: url(../ressources/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat center;
+        background-size: 100%;}
+    .img-second{
+        background: url(../ressources/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) no-repeat center;
+        background-size: 100%;}
+    .img-third{
+        background: url(../ressources/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) no-repeat center; 
+        background-size: 100%;}
+    .img-fourth{
+        background: url(../ressources/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) no-repeat center;
+        background-size: 100%;}
+}
+
+/* FOOTER */
+
+@import "./layout/footer";

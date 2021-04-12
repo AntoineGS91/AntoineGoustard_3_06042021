@@ -1,0 +1,23 @@
+footer{
+    padding-top: 15px;
+    background-color: rgb(53, 53, 53);
+    color: white;
+    padding-left: 30px;
+    height: 190px;
+    div{
+        display: inline;
+        width: 10px;
+    }
+    p{
+        display: inline-block;
+        margin: 0;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    .fas{
+        margin-right: 5px;
+    }
+    .fa-utensils{
+        margin-right: 12px;
+    }
+}
