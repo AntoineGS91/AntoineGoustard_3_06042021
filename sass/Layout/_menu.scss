@@ -1,0 +1,73 @@
+img{
+    height: 350px;
+    width: 100%;
+    position: relative;
+}
+
+.menu{
+    position: relative;
+    bottom: 110px;
+    background-color: $back-color;
+    border-radius: 40px 40px 0 0;
+    padding: 0 10px 0 10px;
+    height: 1350px;
+    margin-bottom: -35%;
+    &__type{
+        width: 40px;
+        padding-bottom: 5px;
+        border-bottom: solid 3px #99E2D0;
+        text-transform: uppercase;
+        font-weight: normal;
+    }
+    .menu__results{
+        margin-top: 50px;
+    }
+    .btn{
+        @include btn-order;
+        position: relative;
+        top: 50px;
+        right: 15px;
+        height: 40px;
+    }
+    h3{
+        padding-top: 30px;
+        margin-left: 10px;
+        font-size: 1.5em;
+        margin-bottom: -40px;
+    }
+    .fa-heart{
+        position: relative;
+        left: 85%;
+        top: 10px;
+        font-size: 1.5em;
+    }
+    .meal{
+        border-radius: 20px;
+        background-color: white;
+        height: 75px;
+        @include thread-shadow;
+        padding: 0 20px 0 20px;
+        .meal_detail{
+            font-size: 0.9em;
+            width: 80%;
+            height: 15px;
+        }
+        h4{
+            padding-top: 15px;
+            margin-bottom: -10px;
+        }
+        &__price{
+            text-align: end;
+            position: relative;
+            bottom: 30px;
+            font-weight: bold;
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px){
+    .menu{
+        margin-bottom: -115px;
+    }
+}
+

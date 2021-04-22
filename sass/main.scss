@@ -1,25 +1,13 @@
 
 @import "./base/font";
-
-*{
-    font-family: 'Roboto', sans-serif;
-}
-
-h3{
-    font-family: 'Shrikhand', cursive;
-}
-
-/* HEADER */ 
-
-.logo{
-    height: 50px;
-    width: 50%;
-    margin-left: 25%
-}
-
-/* MAIN */ 
-
-$back-color:rgb(230, 230, 230);
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/menu";
+@import "./layout/btn";
+@import "./layout/animation";
+@import "./layout/keyframes";
 
 .localised{
     background-color: darken($back-color, 10%);
@@ -37,7 +25,6 @@ $back-color:rgb(230, 230, 230);
         height: 40px;
         width: 150px;
         background-color: darken($back-color, 10%);    
-       
         &::placeholder{
             color: black;
         }
@@ -48,25 +35,22 @@ $back-color:rgb(230, 230, 230);
     background-color: $back-color;
     text-align: center;
     height: 300px;
+    .reserv{
+        padding: 10px;
+    }
     h2{
-        margin-left: 75px;
-        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
         width: 250px;
     }
     p{
-        font-size: 1.2em;
-        width: 350px;
-        margin: 20px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
         color: rgb(39, 39, 39);
     }
     .btn{
-        color: white;
-        height: 30px;
-        border-radius: 20px;
-        margin-left: 112px;
-        width: 200px;
-        background-color: blueviolet;
-        padding-top: 10px;
+        @include btn-order;
     }
 }
 
@@ -78,11 +62,10 @@ $back-color:rgb(230, 230, 230);
         border-radius: 20px;
         height: 75px;
         margin-bottom: 20px;
-        box-shadow: 3px 3px 15px rgb(173, 173, 173);
+        @include thread-shadow;
         width: 90%;
         margin-left: 5%;
-        
-        &:active{
+        &:hover{
             background-color: #f8ecfc;
             i{
                 color: #9356DC;
@@ -93,23 +76,27 @@ $back-color:rgb(230, 230, 230);
             background-color: #9356DC;
             height: 25px;
             width: 25px;
-            position: relative;
-            top: 25px;
-            left: -10px;
             border-radius: 13px;
-            text-align: center;
+            position: relative;
+            top: 23px;
+            right: 10px;
+            span{
+                position: relative;
+                left: 7px;
+                top: 3px;
+            }
         }
         i{
             color: grey;
             position: relative;
-            left: 35px;
-            top: 3px;
+            left: 42px;
+            top: 0px;
         }
         p{
             margin-left: 80px;
             font-weight: bold;
             position: relative;
-            top: -32px;
+            top: -35px;
         }
     }
 }
@@ -130,12 +117,19 @@ $back-color:rgb(230, 230, 230);
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         margin-bottom: 100px;
+        a{
+        text-decoration: none;
+        color: black;
+        &:active{
+            text-decoration: none;
+            }
+        }
         .restaurant-newest{
             width: 30%;
-            background-color: #90e2c9;
+            background-color: #99E2D0;
             float: right;
             height: 30px;
-            color: darken(#90e2c9, 40%);
+            color: darken(#99E2D0, 40%);
             font-weight: bold;
             font-size: 18px;
             text-align: center;
@@ -148,30 +142,21 @@ $back-color:rgb(230, 230, 230);
         .restaurant-over{
             background-color: white;
             height: 70px;
-            width: 349px;
+            width: 100%;
             border-bottom-left-radius: 20px;
             border-bottom-right-radius: 20px;
             position: relative;
             top: 175px;
-            box-shadow: 3px 3px 15px rgb(173, 173, 173);
+            @include thread-shadow;
             display: inline-block;
-            padding-left: 20px;
             h2{
                 font-size: 1.25em;
                 margin-top: -40px;
+                margin-left: 20px;
             }
             p{
                 margin-top: -10px;
-            }
-            i{
-                font-size: 1.75em;
-                float: right;
-                position: relative;
-                bottom: 55px;
-                right: 30px;
-                &:active{
-                    color: #9356DC;
-                }
+                margin-left: 20px;
             }
         }
     }
@@ -188,7 +173,3 @@ $back-color:rgb(230, 230, 230);
         background: url(../ressources/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) no-repeat center;
         background-size: 100%;}
 }
-
-/* FOOTER */
-
-@import "./layout/footer";

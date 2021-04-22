@@ -1,0 +1,23 @@
+@mixin thread-shadow{ 
+    box-shadow: 3px 3px 10px rgb(173, 173, 173);
+    }
+
+@mixin btn-order{
+    color: white;
+    height: 30px;
+    border-radius: 20px;
+    margin: auto;
+    width: 200px;
+    background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+    padding-top: 10px;
+    text-align: center;
+    p{
+      margin: auto;
+      padding-top: 5px;
+    }
+    &:hover{
+      transition-duration: .5s;
+      box-shadow: 10px 10px 20px rgb(173, 173, 173);
+      opacity: 0.8;
+    }
+}
