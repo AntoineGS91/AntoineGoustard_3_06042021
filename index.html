@@ -12,7 +12,7 @@
             <i class="fas fa-circle-notch"></i>
         </div>
         <header>
-            <img class="logo" src="ressources/images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood">
+            <a href="index.html"><img class="logo" src="ressources/images/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood"></a>
         </header> 
         <main>
             <section class="topic-reserv">
@@ -24,7 +24,7 @@
                     <div class="reserv">
                         <h2>Réservez le menu qui vous convient</h2>
                         <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                        <div class="btn">Explorer nos restaurants</div>
+                        <a href="#list_restaurant"><div class="btn">Explorer nos restaurants</div></a>
                     </div>
                 </div>
             </section>
@@ -48,11 +48,11 @@
                     </div>
                 </div>
             </section>
-            <section class="topic-restaurant">
+            <section class="topic-restaurant" id="list_restaurant">
                 <h2>Restaurants</h2>
                 <div>
                     <div class="restaurant-result img-first">
-                        <div class="restaurant-over">
+                        <div class="restaurant-footer">
                             <a href="la-palette-du-gout.html">
                                 <h2>La palette du goût</h2>
                                 <p>Ménilmontant</p>
@@ -66,62 +66,65 @@
                         <p class="restaurant-newest">Nouveau</p>
                     </div>
                     <div class="restaurant-result img-second">
-                        <a href="la-note-enchantee.html">
-                            <div class="restaurant-over">
+                        <div class="restaurant-footer">
+                            <a href="la-note-enchantee.html">
                                 <h2>La note enchantée</h2>
                                 <p>Charonne</p>
-                                <div class="heart">
-                                    <i class="far fa-heart heart-nocolor">
-                                        <i class="fas fa-heart heart-color"></i>
-                                    </i>
-                                </div>
+                            </a>
+                            <div class="heart">
+                                <i class="far fa-heart heart-nocolor">
+                                    <i class="fas fa-heart heart-color"></i>
+                                </i>
                             </div>
-                            <p class="restaurant-newest">Nouveau</p>
-                        </a>
+                        </div>
+                        <p class="restaurant-newest">Nouveau</p>
                     </div>
                     <div class="restaurant-result img-third">
-                        <a href="a-la-francaise.html">
-                            <div class="restaurant-over">
+                        <div class="restaurant-footer">
+                            <a href="a-la-francaise.html">
                                 <h2>À la française</h2>
                                 <p>Cité Rouge</p>
-                                <div class="heart">
-                                    <i class="far fa-heart heart-nocolor">
-                                        <i class="fas fa-heart heart-color"></i>
-                                    </i>
-                                </div>
+                            </a>
+                            <div class="heart">
+                                <i class="far fa-heart heart-nocolor">
+                                    <i class="fas fa-heart heart-color"></i>
+                                </i>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="restaurant-result img-fourth">
-                        <a href="le-delice-des-sens.html">
-                            <div class="restaurant-over">
+                        <div class="restaurant-footer">
+                            <a href="le-delice-des-sens.html">
                                 <h2>Le délice des sens</h2>
                                 <p>Folie-Méricourt</p>
-                                <div class="heart">
-                                    <i class="far fa-heart heart-nocolor">
-                                        <i class="fas fa-heart heart-color"></i>
-                                    </i>
-                                </div>
+                            </a>    
+                            <div class="heart">
+                                <i class="far fa-heart heart-nocolor">
+                                    <i class="fas fa-heart heart-color"></i>
+                                </i>
                             </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
         <footer>
             <h3>ohmyfood</h3>
-            <div>
-                <i class="fas fa-utensils"></i>
-                <p>Proposer un restaurant</p>
+            <div class="footer__list">
+                <div>
+                    <i class="fas fa-utensils"></i>
+                    <p>Proposer un restaurant</p>
+                </div>
+                </br>
+                <div>
+                    <i class="fas fa-hands-helping"></i>
+                    <p>Devenir partenaire</p>
+                </div>
+                <p>Mentions légales</p>
+                <p>
+                    <a href="mailto:adresse@contact.com">Contact</a>
+                </p>
             </div>
-            <div>
-                <i class="fas fa-hands-helping"></i>
-                <p>Devenir partenaire</p>
-            </div>
-            <p>Mentions légales</p>
-            <p>
-                <a href="mailto:adresse@contact.com">Contact</a>
-            </p>
         </footer>
     </body>
 </html>

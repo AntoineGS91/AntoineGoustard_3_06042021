@@ -8,9 +8,10 @@
     border-radius: 20px;
     margin: auto;
     width: 200px;
-    background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+    background: linear-gradient(0deg, $primary-color 0%, $secondary-color 100%);
     padding-top: 10px;
     text-align: center;
+    cursor: pointer;
     p{
       margin: auto;
       padding-top: 5px;

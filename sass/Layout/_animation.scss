@@ -3,14 +3,15 @@
     position:relative;
     bottom: 75px;
     right: 15px;
-    font-size: 21px;
+    font-size: 1.5em;
     z-index: 1;
+    cursor: pointer;
     .heart-nocolor{
         position:relative;
         z-index: 1;
         top: 28px; 
         &:hover{
-            background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+            background: linear-gradient(0deg, $primary-color 0%, $secondary-color 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             -webkit-text-stroke: 0px white;
@@ -23,12 +24,12 @@
             position:absolute;
             left: 0;
             top: 0;
-            background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
+            background: linear-gradient(0deg, $primary-color 0%, $secondary-color 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             opacity: 0;
             transform: scale(0);
-            transition: .5s ease;
+            transition: .25s ease;
         }
     }
 }
@@ -49,15 +50,15 @@
     height: 100%;
     top:0;
     display: flex;
-    color: pink;
+    color: $primary-color;
     font-size: 150px;
     position: fixed;
     background-color: white;
-    animation: back 2s;
+    animation: back 3s;
     animation-fill-mode: forwards;
     i{
         margin: auto;
-        animation: i-spin 2s linear infinite;
+        animation: i-spin 1s linear infinite;
         animation-fill-mode: forwards;
     }
 }

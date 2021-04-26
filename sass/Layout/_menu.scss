@@ -15,7 +15,7 @@ img{
     &__type{
         width: 40px;
         padding-bottom: 5px;
-        border-bottom: solid 3px #99E2D0;
+        border-bottom: solid 3px $tertiary-color;
         text-transform: uppercase;
         font-weight: normal;
     }
@@ -33,12 +33,12 @@ img{
         padding-top: 30px;
         margin-left: 10px;
         font-size: 1.5em;
-        margin-bottom: -40px;
+        margin-bottom: -20px;
     }
-    .fa-heart{
+    .heart{
         position: relative;
-        left: 85%;
-        top: 10px;
+        bottom: 40px;
+        right: 25px;
         font-size: 1.5em;
     }
     .meal{
@@ -65,9 +65,20 @@ img{
     }
 }
 
-@media screen and (min-width: 481px) and (max-width: 1024px){
+@media screen and (min-width: 768px) and (max-width: 1024px){
     .menu{
         margin-bottom: -115px;
     }
 }
 
+@media screen and (min-width: 1025px){
+    .menu{
+        width: 75%;
+        margin-left: 12.5%;
+        padding: 0;
+    }
+    img{
+        width: 75%;
+        margin-left: 12.5%;
+    }
+}
