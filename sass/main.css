@@ -37,28 +37,52 @@ footer .fa-utensils {
 
 @media screen and (min-width: 426px) and (max-width: 767px) {
   footer {
-    padding-top: 10%;
+    padding-top: 17%;
+  }
+}
+@media screen and (min-width: 768px) {
+  footer {
+    padding-left: 0;
+    height: auto;
+    font-size: 1.2em;
+  }
+  footer h3 {
+    margin-left: 40%;
+  }
+  footer .footer__list {
+    display: flex;
+    flex-flow: row wrap;
+    width: 75%;
+    height: 75px;
+    margin-left: 15%;
+    justify-content: space-between;
+  }
+  footer .footer__list div {
+    width: 50%;
+    display: flex;
+    height: 30px;
+  }
+  footer .footer__list div p {
+    width: 100%;
+    margin-left: 5px;
+  }
+  footer .footer__list p {
+    width: 45%;
+  }
+  footer .footer__list .fas {
+    margin: 0;
+  }
+  footer .footer__list p:nth-child(5n) {
+    margin-right: 27px;
   }
 }
 @media screen and (min-width: 1025px) {
   footer {
-    height: auto;
+    padding-left: 9%;
     font-size: 1.5em;
   }
-  footer h3 {
-    margin-left: 46%;
-  }
-  footer .footer__list {
-    width: 75%;
-    margin-left: 22%;
-    display: flex;
-    flex-flow: row wrap;
-  }
-  footer .footer__list div {
-    width: 50%;
-  }
-  footer .footer__list p {
-    width: 50%;
+  footer__list {
+    width: 60%;
   }
 }
 .logo {
