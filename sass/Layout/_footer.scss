@@ -1,8 +1,8 @@
 footer{
-    padding-top: 25px;
+    padding-top: 5%;
     background-color: rgb(53, 53, 53);
     color: white;
-    padding-left: 30px;
+    padding-left: 5%;
     height: 190px;
     a{
         text-decoration: none;
@@ -10,7 +10,6 @@ footer{
     }
     div{
         display: inline;
-        width: 10px;
     }
     p{
         display: inline-block;
@@ -26,40 +25,10 @@ footer{
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px){
+@media screen and (min-width: 426px) and (max-width: 767px){
     footer{
-        height: auto;
-        font-size: 1.2em;
-        h3{
-            margin-left: 40%;
-        }
-        .footer__list{
-            display: flex;
-            flex-flow: row wrap;
-            width: 75%;
-            height: 75px;
-            margin-left: 15%;
-            justify-content: space-between;
-            div{
-                width: 50%;
-                display: flex;
-                height: 30px;
-                p{
-                    width: 100%;
-                    margin-left: 5px;
-                }
-            }
-            p{
-                width: 45%;
-            }
-            .fas{
-                margin: 0;
-            }
-            p:nth-child(5n){
-                margin-right: 27px;
-            }
-        }
-}
+        padding-top: 10%;
+    }
 }
 
 @media screen and (min-width: 1025px){
