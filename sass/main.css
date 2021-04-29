@@ -38,6 +38,7 @@ footer .fa-utensils {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   footer {
+    height: auto;
     font-size: 1.2em;
   }
   footer h3 {
@@ -72,6 +73,7 @@ footer .fa-utensils {
 }
 @media screen and (min-width: 1025px) {
   footer {
+    height: auto;
     font-size: 1.5em;
   }
   footer h3 {
@@ -107,6 +109,11 @@ footer .fa-utensils {
   top: 15px;
 }
 
+@media screen and (min-width: 1025px) {
+  .fa-arrow-left {
+    right: 85%;
+  }
+}
 img {
   height: 350px;
   width: 100%;
@@ -119,7 +126,7 @@ img {
   background-color: #ededed;
   border-radius: 40px 40px 0 0;
   padding: 0 10px 0 10px;
-  height: 1350px;
+  height: 1300px;
   margin-bottom: -35%;
 }
 .menu__type {
@@ -133,28 +140,8 @@ img {
   margin-top: 50px;
 }
 .menu .btn {
-  color: white;
-  height: 30px;
-  border-radius: 20px;
-  margin: auto;
-  width: 200px;
-  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
-  padding-top: 10px;
-  text-align: center;
-  cursor: pointer;
-  position: relative;
-  top: 50px;
-  right: 15px;
+  margin-top: 10%;
   height: 40px;
-}
-.menu .btn p {
-  margin: auto;
-  padding-top: 5px;
-}
-.menu .btn:hover {
-  transition-duration: 0.5s;
-  box-shadow: 10px 10px 20px #adadad;
-  opacity: 0.8;
 }
 .menu h3 {
   padding-top: 30px;
@@ -169,43 +156,106 @@ img {
   font-size: 1.5em;
 }
 .menu .meal {
+  display: flex;
   border-radius: 20px;
   background-color: white;
   height: 75px;
   box-shadow: 3px 3px 10px #adadad;
-  padding: 0 20px 0 20px;
+  padding: 0 0 0 20px;
+  margin-bottom: 25px;
 }
-.menu .meal .meal_detail {
+.menu .meal h4 {
+  margin-bottom: -10px;
+}
+.menu .meal__detail {
   font-size: 0.9em;
   width: 80%;
   height: 15px;
-}
-.menu .meal h4 {
-  padding-top: 15px;
-  margin-bottom: -10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu .meal__price {
+  padding-top: 5%;
   text-align: end;
-  position: relative;
-  bottom: 30px;
-  font-weight: bold;
+  width: 10%;
+  padding-right: 10px;
+}
+.menu .meal__text {
+  height: 100%;
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu .meal__valid {
+  float: right;
+  display: flex;
+  width: 0px;
+  border-radius: 0 20px 20px 0;
+  padding: 25px 0;
+  height: 26px;
+  background-color: #99E2D0;
+  text-align: center;
+  transition: all 0.5s ease;
+  color: white;
+  overflow: hidden;
+}
+.menu .meal__valid .fas {
+  justify-content: center;
+  margin: auto;
+  font-size: 1.5em;
+}
+.menu .meal:hover .fas {
+  -webkit-animation: valid-circle 0.5s;
+          animation: valid-circle 0.5s;
+}
+.menu .meal:hover .meal__valid {
+  width: 25%;
+  transition: all 0.5s ease;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+#menu-large {
+  height: 1400px;
+}
+
+@media screen and (min-width: 768px) {
   .menu {
-    margin-bottom: -115px;
+    margin-bottom: -110px;
+  }
+  .menu .meal__price {
+    padding-top: 2%;
   }
 }
 @media screen and (min-width: 1025px) {
-  .menu {
-    width: 75%;
-    margin-left: 12.5%;
-    padding: 0;
+  body > div {
+    background-color: #ededed;
   }
 
   img {
-    width: 75%;
-    margin-left: 12.5%;
+    width: 65%;
+    margin-left: 17.5%;
+    border-radius: 20px;
+    image-rendering: -webkit-optimize-contrast;
+  }
+
+  .menu {
+    padding: 0;
+  }
+  .menu .btn {
+    margin-top: 2.5%;
+  }
+  .menu h3 {
+    margin-left: 17.5%;
+  }
+  .menu .heart {
+    margin-right: 20%;
+  }
+  .menu .meal__price {
+    padding-top: 2%;
+  }
+  .menu__results {
+    width: 65%;
+    margin-left: 17.5%;
   }
 }
 .btn {
@@ -245,7 +295,7 @@ img {
   top: 28px;
 }
 .heart .heart-nocolor:hover {
-  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  background: linear-gradient(#9356DC 0%, #FF79DA 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0px white;
@@ -377,6 +427,16 @@ img {
   50% {
     transform: rotate(180deg);
   }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes valid-circle {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes valid-circle {
   100% {
     transform: rotate(360deg);
   }
@@ -605,6 +665,25 @@ img {
     left: -40px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 950px) {
+  .operation-results {
+    margin-left: 0px;
+    width: 30%;
+    height: 5em;
+  }
+  .operation-results p {
+    margin: 0;
+    top: 30px;
+    right: 60px;
+  }
+  .operation-results .fas {
+    margin-left: 15%;
+    margin-right: 15%;
+    position: relative;
+    top: 30px;
+    left: -40px;
+  }
+}
 @media screen and (min-width: 1025px) {
   .topic-operation {
     width: 75%;
@@ -643,6 +722,8 @@ img {
   }
 
   .topic-restaurant {
+    padding-left: 10%;
+    padding-right: 10%;
     height: 725px;
   }
   .topic-restaurant h2 {

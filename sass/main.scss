@@ -208,6 +208,26 @@
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 950px){
+        .operation-results{
+            margin-left: 0px;
+            width: 30%;
+            height: 5em;
+            p{
+                margin: 0;
+                top: 30px;
+                right: 60px;
+            }
+            .fas{
+                margin-left: 15%;
+                margin-right: 15%;
+                position: relative;
+                top: 30px;
+                left: -40px;
+            }
+        }
+    }
+
 @media screen and (min-width: 1025px){
     .topic-operation{
         width: 75%;
@@ -252,6 +272,8 @@
     }
 
     .topic-restaurant{
+        padding-left: 10%;
+        padding-right: 10%;
         height: 725px;
         h2{
             text-align: center;
