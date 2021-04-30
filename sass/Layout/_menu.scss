@@ -101,8 +101,15 @@ img{
 }
 
 #menu-large{
-    height: 1400px;
+    height: 1420px;
 }
+
+@media screen and (min-width: 425px) and (max-width: 1024px){
+    .menu{
+        margin-bottom: -25%;
+    }
+}
+
 
 @media screen and (min-width: 768px){
     .menu{
