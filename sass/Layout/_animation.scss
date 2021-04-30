@@ -54,11 +54,11 @@
     font-size: 150px;
     position: fixed;
     background-color: white;
-    animation: back 3s;
+    animation: back 1s;
     animation-fill-mode: forwards;
     i{
         margin: auto;
-        animation: i-spin 1s linear infinite;
+        animation: i-spin .75s linear infinite;
         animation-fill-mode: forwards;
     }
 }
