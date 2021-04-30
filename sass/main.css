@@ -9,24 +9,20 @@ h3 {
 }
 
 footer {
-  padding-top: 5%;
+  padding: 5%;
   background-color: #353535;
   color: white;
-  padding-left: 5%;
   height: 190px;
 }
 footer a {
   text-decoration: none;
   color: white;
 }
-footer div {
-  display: inline;
-}
 footer p {
   display: inline-block;
   margin: 0;
   margin-bottom: 10px;
-  width: 90%;
+  width: 80%;
 }
 footer .fas {
   margin-right: 5px;
@@ -42,18 +38,17 @@ footer .fa-utensils {
     font-size: 1.2em;
   }
   footer h3 {
-    margin-left: 40%;
+    margin-left: 42%;
   }
   footer .footer__list {
     display: flex;
     flex-flow: column wrap;
-    width: 70%;
+    width: 80%;
     height: 75px;
-    margin-left: 15%;
+    margin-left: 20%;
     justify-content: space-between;
   }
   footer .footer__list div {
-    width: 50%;
     display: flex;
     height: 30px;
   }
