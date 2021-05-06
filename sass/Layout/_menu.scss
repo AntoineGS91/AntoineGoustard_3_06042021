@@ -1,19 +1,31 @@
-img{
-    height: 650px;
-    width: 100%;
-    bottom: 50px;
-    z-index: 2;
+.img{
+    &-top1{
+        background: url(/ressources/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    }
+    &-top2{
+        background: url(/ressources/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+    }
+    &-top3{
+        background: url(/ressources/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    }
+    &-top4{
+        background: url(/ressources/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+    }
+}
+
+.img-top1, .img-top2, .img-top3, .img-top4{
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 200px;
+        margin-bottom: -75px;
 }
 
 .menu{
-    z-index: 1;
-    position: relative;
-    bottom: 275px;
     background-color: $back-color;
     border-radius: 40px 40px 0 0;
     padding: 0 10px 0 10px;
     height: 1300px;
-    margin-bottom: -35%;
     &__type{
         width: 40px;
         padding-bottom: 5px;
@@ -71,34 +83,6 @@ img{
             text-overflow: ellipsis;
             white-space: nowrap;
         }
-        &__valid{
-            float: right;
-            display: flex;
-            width: 0px;
-            border-radius: 0 20px 20px 0;
-            padding: 25px 0;
-            height: 26px; 
-            background-color: $tertiary-color;
-            text-align: center;
-            transition: all 0.5s ease;
-            color: white;
-            overflow: hidden;
-            .fas{
-                justify-content: center;
-                margin: auto;
-                font-size: 1.5em;
-            }
-        }       
-        &:hover{
-            .fas{
-                animation: valid-circle 0.5s;
-        }
-            .meal__valid{
-                width: 25%;
-                transition: all 0.5s ease;
-            }
-        }
-        
     }
 }
 
@@ -106,16 +90,8 @@ img{
     height: 1420px;
 }
 
-@media screen and (min-width: 425px) and (max-width: 1024px){
-    .menu{
-        margin-bottom: -25%;
-    }
-}
-
-
 @media screen and (min-width: 768px){
     .menu{
-        margin-bottom: -110px;
         height: 1350px;
         .meal__price{
             padding-top: 2%;
@@ -124,14 +100,14 @@ img{
 }
 
 @media screen and (min-width: 1025px){
+
+    .img-top1, .img-top2, .img-top3, .img-top4{
+        border-radius: 20px 20px 0 0;
+        height: 350px;
+    }
+
     body > div{
         background-color: $back-color;
-    }
-    img{
-        width: 65%;
-        margin-left: 17.5%;
-        border-radius: 20px;
-        image-rendering: -webkit-optimize-contrast;
     }
     .menu{
         padding: 0;
